@@ -1,0 +1,35 @@
+{"timestamp":"2026-04-04T08:30:49.773075Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-04-04T08:30:49.775557Z","level":"info","event":"Filling up the DagBag from /home/artem/airflow/dags/airflow_pipe.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-04-04T08:30:50.513367Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/home/artem/airflow/dags/airflow_pipe.py","lineno":5,"logger":"py.warnings"}
+{"timestamp":"2026-04-04T08:30:50.514656Z","level":"info","event":"Stats instance was created in PID 2001 but accessed in PID 2186. Re-initializing.","logger":"airflow.stats","filename":"stats.py","lineno":57}
+{"timestamp":"2026-04-04T08:30:50.528819Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-04-04T08:30:50.528897Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-04-04T08:30:50.528920Z","level":"info","event":"Current task name:train_model","logger":"task.stdout"}
+{"timestamp":"2026-04-04T08:30:50.528938Z","level":"info","event":"Dag name:car_price_ml_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-04-04T08:30:50.746991Z","level":"error","event":"2026/04/04 10:30:50 INFO mlflow.tracking.fluent: Experiment with name 'car_price_prediction' does not exist. Creating a new experiment.","logger":"task.stderr"}
+{"timestamp":"2026-04-04T08:30:50.815153Z","level":"error","event":"2026/04/04 10:30:50 WARNING mlflow.utils.git_utils: Failed to import Git (the Git executable is probably not on your PATH), so Git SHA is not available. Error: Failed to initialize: Bad git executable.","logger":"task.stderr"}
+{"timestamp":"2026-04-04T08:30:50.815240Z","level":"error","event":"The git executable must be specified in one of the following ways:","logger":"task.stderr"}
+{"timestamp":"2026-04-04T08:30:50.815266Z","level":"error","event":"    - be included in your $PATH","logger":"task.stderr"}
+{"timestamp":"2026-04-04T08:30:50.815285Z","level":"error","event":"    - be set via $GIT_PYTHON_GIT_EXECUTABLE","logger":"task.stderr"}
+{"timestamp":"2026-04-04T08:30:50.815302Z","level":"error","event":"    - explicitly set via git.refresh(<full-path-to-git-executable>)","logger":"task.stderr"}
+{"timestamp":"2026-04-04T08:30:50.815318Z","level":"error","event":"","logger":"task.stderr"}
+{"timestamp":"2026-04-04T08:30:50.815335Z","level":"error","event":"All git commands will error until this is rectified.","logger":"task.stderr"}
+{"timestamp":"2026-04-04T08:30:50.815351Z","level":"error","event":"","logger":"task.stderr"}
+{"timestamp":"2026-04-04T08:30:50.815368Z","level":"error","event":"This initial message can be silenced or aggravated in the future by setting the","logger":"task.stderr"}
+{"timestamp":"2026-04-04T08:30:50.815382Z","level":"error","event":"$GIT_PYTHON_REFRESH environment variable. Use one of the following values:","logger":"task.stderr"}
+{"timestamp":"2026-04-04T08:30:50.815396Z","level":"error","event":"    - quiet|q|silence|s|silent|none|n|0: for no message or exception","logger":"task.stderr"}
+{"timestamp":"2026-04-04T08:30:50.815411Z","level":"error","event":"    - warn|w|warning|log|l|1: for a warning message (logging level CRITICAL, displayed by default)","logger":"task.stderr"}
+{"timestamp":"2026-04-04T08:30:50.815427Z","level":"error","event":"    - error|e|exception|raise|r|2: for a raised exception","logger":"task.stderr"}
+{"timestamp":"2026-04-04T08:30:50.815443Z","level":"error","event":"","logger":"task.stderr"}
+{"timestamp":"2026-04-04T08:30:50.815458Z","level":"error","event":"Example:","logger":"task.stderr"}
+{"timestamp":"2026-04-04T08:30:50.815484Z","level":"error","event":"    export GIT_PYTHON_REFRESH=quiet","logger":"task.stderr"}
+{"timestamp":"2026-04-04T08:30:50.815504Z","level":"error","event":"","logger":"task.stderr"}
+{"timestamp":"2026-04-04T08:30:59.018086Z","level":"error","event":"2026/04/04 10:30:59 WARNING mlflow.models.model: `artifact_path` is deprecated. Please use `name` instead.","logger":"task.stderr"}
+{"timestamp":"2026-04-04T08:30:59.056807Z","level":"error","event":"2026/04/04 10:30:59 WARNING mlflow.sklearn: Saving scikit-learn models in the pickle or cloudpickle format requires exercising caution because these formats rely on Python's object serialization mechanism, which can execute arbitrary code during deserialization. The recommended safe alternative is the 'skops' format. For more information, see: https://scikit-learn.org/stable/model_persistence.html","logger":"task.stderr"}
+{"timestamp":"2026-04-04T08:31:03.675842Z","level":"info","event":"✅ Обучение завершено! Метрики: RMSE=1.58, MAE=1.25, R²=0.7782","logger":"task.stdout"}
+{"timestamp":"2026-04-04T08:31:03.702125Z","level":"info","event":"📁 Артефакты сохранены в: artifacts","logger":"task.stdout"}
+{"timestamp":"2026-04-04T08:31:03.697768Z","level":"info","event":"Done. Returned value was: {'rmse': np.float64(1.581249876942192), 'mae': 1.2531905427871437, 'r2': 0.7781882142818116}","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":229}
+{"timestamp":"2026-04-04T08:31:03.697937Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('019d579d-b3e3-7ae6-9987-589600676af5'), task_id='train_model', dag_id='car_price_ml_pipeline', run_id='scheduled__2026-04-04T00:00:00+00:00', try_number=1, dag_version_id=UUID('019d579d-b0ce-7364-b357-f19b302f491c'), map_index=-1, hostname='artem-VirtualBox', context_carrier={}, task=<Task(PythonOperator): train_model>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=1, start_date=datetime.datetime(2026, 4, 4, 8, 30, 49, 754292, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task","filename":"task_runner.py","lineno":1573}
+{"timestamp":"2026-04-04T08:31:03.747014Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-04-04T08:31:03.747102Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-04-04T08:31:03.747127Z","level":"info","event":"Task operator:<Task(PythonOperator): train_model>","logger":"task.stdout"}

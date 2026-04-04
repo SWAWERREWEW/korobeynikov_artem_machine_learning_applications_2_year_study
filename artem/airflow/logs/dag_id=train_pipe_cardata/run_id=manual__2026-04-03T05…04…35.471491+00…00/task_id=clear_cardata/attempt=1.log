@@ -1,0 +1,70 @@
+{"timestamp":"2026-04-03T05:04:47.024253Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-04-03T05:04:47.025965Z","level":"info","event":"Filling up the DagBag from /home/artem/airflow/dags/airflow_pipe.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-04-03T05:04:50.073708Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/home/artem/airflow/dags/airflow_pipe.py","lineno":12,"logger":"py.warnings"}
+{"timestamp":"2026-04-03T05:04:50.077858Z","level":"info","event":"Stats instance was created in PID 18143 but accessed in PID 18836. Re-initializing.","logger":"airflow.stats","filename":"stats.py","lineno":57}
+{"timestamp":"2026-04-03T05:04:50.123519Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.123613Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.123636Z","level":"info","event":"Current task name:clear_cardata","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.123654Z","level":"info","event":"Dag name:train_pipe_cardata","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.144872Z","level":"info","event":"Исходный размер данных: (15, 9)","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.178705Z","level":"info","event":"<class 'pandas.core.frame.DataFrame'>","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.178805Z","level":"info","event":"RangeIndex: 15 entries, 0 to 14","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.178830Z","level":"info","event":"Data columns (total 9 columns):","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.178851Z","level":"info","event":" #   Column         Non-Null Count  Dtype","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.178868Z","level":"info","event":"---  ------         --------------  -----","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.178883Z","level":"info","event":" 0   Car_Name       15 non-null     object","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.178897Z","level":"info","event":" 1   Year           15 non-null     int64","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.178911Z","level":"info","event":" 2   Selling_Price  15 non-null     float64","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.178926Z","level":"info","event":" 3   Present_Price  15 non-null     float64","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.178941Z","level":"info","event":" 4   Kms_Driven     15 non-null     int64","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.178954Z","level":"info","event":" 5   Fuel_Type      15 non-null     object","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.178966Z","level":"info","event":" 6   Seller_Type    15 non-null     object","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.178980Z","level":"info","event":" 7   Transmission   15 non-null     object","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.178994Z","level":"info","event":" 8   Owner          15 non-null     int64","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.179007Z","level":"info","event":"dtypes: float64(2), int64(3), object(4)","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.179020Z","level":"info","event":"memory usage: 1.2+ KB","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.179340Z","level":"info","event":"Информация о данных:","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.179402Z","level":"info","event":"None","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.211891Z","level":"info","event":"Статистика:","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.211987Z","level":"info","event":"              Year  Selling_Price  Present_Price    Kms_Driven      Owner","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.212015Z","level":"info","event":"count    15.000000      15.000000      15.000000     15.000000  15.000000","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.212032Z","level":"info","event":"mean   2015.933333       5.673333       8.133333  24503.933333   0.133333","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.212049Z","level":"info","event":"std       2.282438       2.541082       3.297997  12955.350381   0.351866","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.212064Z","level":"info","event":"min    2011.000000       2.100000       3.200000   5200.000000   0.000000","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.212078Z","level":"info","event":"25%    2014.500000       3.850000       5.695000  15000.000000   0.000000","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.212092Z","level":"info","event":"50%    2016.000000       5.200000       7.900000  22000.000000   0.000000","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.212105Z","level":"info","event":"75%    2017.500000       7.025000       9.695000  33500.000000   0.000000","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.216126Z","level":"info","event":"max    2019.000000      11.500000      15.800000  45000.000000   1.000000","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.216208Z","level":"info","event":"Пропуски в данных:","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.216231Z","level":"info","event":"Car_Name         0","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.216249Z","level":"info","event":"Year             0","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.216264Z","level":"info","event":"Selling_Price    0","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.216279Z","level":"info","event":"Present_Price    0","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.216333Z","level":"info","event":"Kms_Driven       0","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.216349Z","level":"info","event":"Fuel_Type        0","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.216363Z","level":"info","event":"Seller_Type      0","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.216378Z","level":"info","event":"Transmission     0","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.216392Z","level":"info","event":"Owner            0","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.216405Z","level":"info","event":"dtype: int64","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.216420Z","level":"info","event":"Удалено дубликатов: 0","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.221897Z","level":"info","event":"Удалено выбросов по пробегу: 0","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.223271Z","level":"info","event":"Удалено выбросов по цене: 0","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.255216Z","level":"info","event":"Размер очищенных данных: (15, 11)","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.256580Z","level":"info","event":"Колонки: ['Year', 'Present_Price', 'Kms_Driven', 'Owner', 'Car_Age', 'Price_Ratio', 'Log_Kms_Driven', 'Fuel_Type', 'Seller_Type', 'Transmission', 'Selling_Price']","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.310440Z","level":"info","event":"Статистика очищенных данных:","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.310553Z","level":"info","event":"              Year  Present_Price  ...  Transmission  Selling_Price","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.310578Z","level":"info","event":"count    15.000000      15.000000  ...     15.000000      15.000000","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.310596Z","level":"info","event":"mean   2015.933333       8.133333  ...      0.800000       5.673333","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.310618Z","level":"info","event":"std       2.282438       3.297997  ...      0.414039       2.541082","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.310634Z","level":"info","event":"min    2011.000000       3.200000  ...      0.000000       2.100000","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.310648Z","level":"info","event":"25%    2014.500000       5.695000  ...      1.000000       3.850000","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.310662Z","level":"info","event":"50%    2016.000000       7.900000  ...      1.000000       5.200000","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.310675Z","level":"info","event":"75%    2017.500000       9.695000  ...      1.000000       7.025000","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.310690Z","level":"info","event":"max    2019.000000      15.800000  ...      1.000000      11.500000","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.310705Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:50.312596Z","level":"info","event":"[8 rows x 11 columns]","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:51.489378Z","level":"info","event":"Done. Returned value was: True","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":229}
+{"timestamp":"2026-04-03T05:04:51.491683Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('019d51ba-94a8-7994-b8d9-1e613c56f958'), task_id='clear_cardata', dag_id='train_pipe_cardata', run_id='manual__2026-04-03T05:04:35.471491+00:00', try_number=1, dag_version_id=UUID('019d51b8-9ab6-740e-9968-bb70c5331b61'), map_index=-1, hostname='artem-VirtualBox', context_carrier={}, task=<Task(PythonOperator): clear_cardata>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=1, start_date=datetime.datetime(2026, 4, 3, 5, 4, 47, 2192, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task","filename":"task_runner.py","lineno":1573}
+{"timestamp":"2026-04-03T05:04:51.619642Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:51.619736Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-04-03T05:04:51.619759Z","level":"info","event":"Task operator:<Task(PythonOperator): clear_cardata>","logger":"task.stdout"}

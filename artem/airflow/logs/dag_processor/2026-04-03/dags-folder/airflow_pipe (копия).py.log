@@ -1,0 +1,2 @@
+{"timestamp":"2026-04-03T03:05:42.741285Z","level":"info","event":"Filling up the DagBag from /home/artem/airflow/dags/airflow_pipe (копия).py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-04-03T03:05:45.807940Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/home/artem/airflow/dags/airflow_pipe (копия).py","lineno":12,"logger":"py.warnings"}
