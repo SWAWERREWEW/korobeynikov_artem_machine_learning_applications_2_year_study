@@ -1,0 +1,29 @@
+artifact_path: file:///home/artem/airflow/mlflow/mlruns/433501251275875335/models/m-d4368a603dce4904870bbce8df315900/artifacts
+flavors:
+  python_function:
+    cloudpickle_version: 3.1.2
+    code: null
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.pyfunc.model
+    python_model: python_model.pkl
+    python_version: 3.13.12
+    streamable: false
+is_signature_from_type_hint: false
+mlflow_version: 3.10.1
+model_id: m-d4368a603dce4904870bbce8df315900
+model_size_bytes: 3336
+model_uuid: m-d4368a603dce4904870bbce8df315900
+prompts: null
+run_id: 5213f99f12844360a01c0004314fab0d
+saved_input_example_info:
+  artifact_path: input_example.json
+  serving_input_path: serving_input_example.json
+  type: ndarray
+signature:
+  inputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1, 8]}}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-04-14 06:10:38.814848'

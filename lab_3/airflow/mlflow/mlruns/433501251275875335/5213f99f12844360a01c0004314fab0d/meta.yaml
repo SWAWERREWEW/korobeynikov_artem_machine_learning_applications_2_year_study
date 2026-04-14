@@ -1,0 +1,14 @@
+artifact_uri: file:///home/artem/airflow/mlflow/mlruns/433501251275875335/5213f99f12844360a01c0004314fab0d/artifacts
+end_time: 1776147045261
+entry_point_name: ''
+experiment_id: '433501251275875335'
+lifecycle_stage: active
+run_id: 5213f99f12844360a01c0004314fab0d
+run_name: wrapped_price_model
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1776147038782
+status: 3
+tags: []
+user_id: artem

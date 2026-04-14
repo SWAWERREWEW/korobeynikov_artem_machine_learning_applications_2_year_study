@@ -1,0 +1,7 @@
+artifact_location: file:///home/artem/airflow/mlflow/mlruns/433501251275875335
+creation_time: 1776144641047
+experiment_id: '433501251275875335'
+last_update_time: 1776144641047
+lifecycle_stage: active
+name: car_price_experiment
+workspace: default
